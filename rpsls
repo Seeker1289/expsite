@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trial</title>
+    </head>
+    <body>
+        <h2>Rock Paper Scissors</h2>
+        <button onclick="
+        document.body.querySelector('.yrmv').innerHTML = 'Your move: Rock.';
+        slctr();
+        if (cmptmv==='Rock') {
+            document.body.querySelector('.wld').innerHTML = 'It\'s a draw.';
+            drs += 1;
+            document.body.querySelector('.scr').innerHTML = `Wins: ${wns}    Losses: ${lss}    Draws: ${drs}`;
+        } else if (cmptmv==='Paper') {
+            document.body.querySelector('.wld').innerHTML = 'You lose.';
+            lss += 1;
+            document.body.querySelector('.scr').innerHTML = `Wins: ${wns}    Losses: ${lss}    Draws: ${drs}`;
+        } else if (cmptmv==='Scissors') {
+            document.body.querySelector('.wld').innerHTML = 'You win.';
+            wns += 1;
+            document.body.querySelector('.scr').innerHTML = `Wins: ${wns}    Losses: ${lss}    Draws: ${drs}`;
+        }">Rock</button>
+        <button onclick="
+        document.body.querySelector('.yrmv').innerHTML = 'Your move: Paper.';
+        slctr();
+        if (cmptmv==='Rock') {
+            document.body.querySelector('.wld').innerHTML = 'You win.';
+            wns += 1;
+            document.body.querySelector('.scr').innerHTML = `Wins: ${wns}    Losses: ${lss}    Draws: ${drs}`;
+        } else if (cmptmv==='Paper') {
+            document.body.querySelector('.wld').innerHTML = 'It\'s a draw.';
+            drs += 1;
+            document.body.querySelector('.scr').innerHTML = `Wins: ${wns}    Losses: ${lss}    Draws: ${drs}`;
+        } else if (cmptmv==='Scissors') {
+            document.body.querySelector('.wld').innerHTML = 'You lose.';
+            lss += 1;
+            document.body.querySelector('.scr').innerHTML = `Wins: ${wns}    Losses: ${lss}    Draws: ${drs}`;
+        }">Paper</button>
+        <button onclick="
+        document.body.querySelector('.yrmv').innerHTML = 'Your move: Scissors.';
+        slctr();
+        if (cmptmv==='Rock') {
+
+            document.body.querySelector('.wld').innerHTML = 'You lose.';
+            lss += 1;
+            document.body.querySelector('.scr').innerHTML = `Wins: ${wns}    Losses: ${lss}    Draws: ${drs}`;
+        } else if (cmptmv==='Paper') {
+            document.body.querySelector('.wld').innerHTML = 'You win.';
+            wns += 1;
+            document.body.querySelector('.scr').innerHTML = `Wins: ${wns}    Losses: ${lss}    Draws: ${drs}`;
+        } else if (cmptmv==='Scissors') {
+            document.body.querySelector('.wld').innerHTML = 'It\'s a draw.';
+            drs += 1;
+            document.body.querySelector('.scr').innerHTML = `Wins: ${wns}    Losses: ${lss}    Draws: ${drs}`;
+        }">Scissors</button>
+        <p class="wld"></p>
+        <p class="yrmv"></p>
+        <p class="cmv"></p>
+        <p class="scr"></p>
+        <script>
+            let cmptmv=''
+            let wns = 0;
+            let lss = 0;
+            let drs = 0;
+            function slctr() {
+                let a=Math.floor(Math.random()*3);
+                if (a==0) {
+                    cmptmv = 'Rock';
+                    document.body.querySelector('.cmv').innerHTML = 'Computer move: Rock.';
+                } else if (a==1) {
+                    cmptmv = 'Paper';
+                    document.body.querySelector('.cmv').innerHTML = 'Computer move: Paper.';
+                } else if (a==2) {
+                    cmptmv = 'Scissors';
+                    document.body.querySelector('.cmv').innerHTML = 'Computer move: Scissors.';
+                }
+            }
+            //document.body.querySelector('.scr').innerHTML = `Wins: ${wns}    Losses: ${lss}    Draws: ${drs}`;
+        </script>
+    </body>
+</html>
