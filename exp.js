@@ -1,6 +1,7 @@
 let word = prompt('word')   ;
 let blanks = document.querySelector("h1");
 const button = document.querySelector("button");
+let gss = document.querySelector("#gss");
 let a ='';
 let b = [];
 let count;
@@ -9,6 +10,7 @@ let check;
 let n;
 let l = word.length;
 let letter;
+let comma = 0;
 document.querySelector('h3').innerText = `It is a ${l} letter word.`;
 for (let i of word) {
     b.push("-");
@@ -45,6 +47,12 @@ button.onclick = function() {
         }
         if (n == l) {
             document.querySelector('h3').innerText = `${letter} is  not there.`;
+            if (comma != 0) {
+                gss.innerText =  gss.innerText + ',' + letter;
+            } else {
+                gss.innerText = letter;
+                comma++;
+            }
         } else {
             document.querySelector('h3').innerText = '';
         }
