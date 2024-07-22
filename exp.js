@@ -1,4 +1,7 @@
-let word = prompt('word')   ;
+const dict = ['abacus', 'abandon', 'abbreviate', 'abbreviation', 'abdomen', 'abduct', 'abide', 'ability', 'able', 'abnormal', 'abolish', 'abort', 'about', 'above', 'abroad', 'abrupt', 'abs', 'abscissa', 'absent', 'absentee', 'absolute', 'absorb', 'absorbent', 'abstain', 'abstract', 'absurd', 'abundant', 'abuse', 'abyss', 'acacia', 'academia', 'academy', 'accelerate', 'accelerator', 'accent', 'accept', 'access', 'accession', 'accessory', 'accident', 'accommodate', 'accompany', 'accomplish', 'accomplishment', 'accord', 'account', 'accountable', 'accountant', 'accredit', 'accumulate', 'accuracy', 'accurate', 'accuse', 'accustom', 'ace', 'ache', 'achieve', 'achievement', 'achiever', 'acid', 'acknowledge', 'acknowledgement', 'acne', 'acorn', 'acoustic', 'acoustics', 'acquaint', 'acquaintance', 'acquire', 'acre', 'acrobat', 'acrobatics', 'acronym', 'across', 'acrylic', 'act', 'action', 'activate', 'active', 'activist', 'activity', 'actor', 'actress', 'actual', 'actualize', 'actuary', 'actuate', 'actuator', 'acupressure', 'acupuncture', 'acute', 'adagio', 'adamant', 'adapt', 'adaptable', 'adaptation', 'add', 'addict', 'addiction', 'addition', 'additional', 'additive', 'address', 'adequate', 'adhere', 'adhesive', 'adieu', 'adjacent', 'adjective', 'adjoin', 'adjust', 'adjustable', 'adjustment', 'administer', 'administrate', 'administration', 'admire', 'admission', 'admit'];
+let rand = Math.floor(Math.random()*dict.length);
+let word = dict[rand];
+/*let word = prompt('word');*/
 let blanks = document.querySelector("h1");
 const button = document.querySelector("button");
 let gss = document.querySelector("#gss");
