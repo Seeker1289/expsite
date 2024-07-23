@@ -1,0 +1,40 @@
+body {
+    background-color: #fffde7;
+}
+div {
+    text-align  : center;
+}
+#hd {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 90px;
+    font-weight: 850;
+    color: #800000;
+}
+#blnk {
+    font-family: serif;
+    font-size: 60px;
+    font-weight: 550;
+    color: #954535;
+}
+input {
+    font-size: 50px;
+    width: 60px;
+    height: 60px;
+}
+button {
+    width: 68px;
+    height: 30px;
+    font-size: 18px;
+}
+.convey {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 550;
+    color: #801818;
+}
+.ac {
+    font-family: helvetica;
+    font-size: 30px;
+    font-weight: 500;
+    color: #A91101;
+}
